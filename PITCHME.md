@@ -392,6 +392,12 @@ srv.ListenAndServe()
 
 ---
 
+[Go Instrumentation Best Practices @fa[external-link]](https://are-you-testing-your-observability.now.sh/)
+
+![IMAGE](assets/img/testing_obs.png)
+
+---
+
 ### Logs
 
 ---
@@ -777,12 +783,13 @@ Note:
 Note:
 
 - Why?
-Before explaining how you can use the profiler in production, it would be helpful to explain why you would ever want to profile in production. Some very common cases are:
-Debug performance problems only visible in production.
-Understand the CPU usage to reduce billing.
-Understand where the contention cumulates and optimize.
-Understand the impact of new releases, e.g. seeing the difference between canary and production.
-Enrich your distributed traces by correlating them with profiling samples to understand the root cause of latency.
+- Before explaining how you can use the profiler in production, it would be helpful to explain why you would ever want to profile in production.
+- Some very common cases are:
+- Debug performance problems only visible in production.
+- Understand the CPU usage to reduce billing.
+- Understand where the contention cumulates and optimize.
+- Understand the impact of new releases, e.g. seeing the difference between canary and production.
+- Enrich your distributed traces by correlating them with profiling samples to understand the root cause of latency.
 
 ---
 
@@ -803,6 +810,8 @@ Enrich your distributed traces by correlating them with profiling samples to und
 ---
 
 ### **Correlation**: Observability Superpower
+
+---?image=assets/img/lifecycle_with_background.png&size=80%
 
 Note:
 
